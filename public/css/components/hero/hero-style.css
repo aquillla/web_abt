@@ -1,0 +1,163 @@
+.hero {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.hero .overlap-wrapper {
+  background-color: var(--white);
+  width: 1440px;
+}
+
+.hero .overlap {
+  position: relative;
+}
+
+.hero .frame {
+  display: flex;
+  flex-direction: column;
+  width: 1440px;
+  align-items: flex-start;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero .div {
+  position: absolute;
+  width: 931px;
+  top: 197px;
+  left: 64px;
+  font-family: var(--title1-regular-font-family);
+  font-weight: var(--title1-regular-font-weight);
+  color: var(--white);
+  font-size: var(--title1-regular-font-size);
+  letter-spacing: var(--title1-regular-letter-spacing);
+  line-height: var(--title1-regular-line-height);
+  font-style: var(--title1-regular-font-style);
+}
+
+.hero .nav-bar {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 16px;
+  position: absolute;
+  top: 52px;
+  left: 470px;
+  background-color: #ffffff4c;
+  border-radius: 999px;
+}
+
+.hero .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: var(--body2-sbold-font-family);
+  font-weight: var(--body2-sbold-font-weight);
+  color: var(--white);
+  font-size: var(--body2-sbold-font-size);
+  letter-spacing: var(--body2-sbold-letter-spacing);
+  line-height: var(--body2-sbold-line-height);
+  white-space: nowrap;
+  font-style: var(--body2-sbold-font-style);
+}
+
+.hero .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: var(--body2-reg-font-family);
+  font-weight: var(--body2-reg-font-weight);
+  color: var(--white);
+  font-size: var(--body2-reg-font-size);
+  letter-spacing: var(--body2-reg-letter-spacing);
+  line-height: var(--body2-reg-line-height);
+  white-space: nowrap;
+  font-style: var(--body2-reg-font-style);
+}
+
+.hero .frame-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  top: 352px;
+  left: 64px;
+}
+
+.hero .hubungi-admin-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--white);
+  border-radius: 8px;
+}
+
+.hero .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -0.5px;
+  font-family: var(--body2-sbold-font-family);
+  font-weight: var(--body2-sbold-font-weight);
+  color: var(--primarysoft-green);
+  font-size: var(--body2-sbold-font-size);
+  letter-spacing: var(--body2-sbold-letter-spacing);
+  line-height: var(--body2-sbold-line-height);
+  white-space: nowrap;
+  font-style: var(--body2-sbold-font-style);
+}
+
+.hero .nav-bar-2 {
+  display: flex;
+  width: 212px;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  position: relative;
+  background-color: var(--primarysoft-green);
+  border-radius: 8px;
+}
+
+.hero .img {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.hero .white-logo {
+  position: absolute;
+  width: 89px;
+  height: 67px;
+  top: 48px;
+  left: 64px;
+}
+
+.hero .text-wrapper-2,
+.hero .text-wrapper-3,
+.hero .text-wrapper-4,
+.hero .nav-bar-2 {
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 630px;
+  background-color: #00000080;
+  background-image: url(./img/hero.png);
+  background-size: cover;
+  background-position: 50% 50%;
+}
