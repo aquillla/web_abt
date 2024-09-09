@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/components/pkgcard/des/des-style.css" />
   </head>
   <body>
-    <div class="card-3">
+    <div class="card-105">
         <div class="frame-10">
             <div class="frame-13">
                 <div class="frame-15"><div class="text-wrapper-13" onclick="navigateTo('')">September</div></div>

@@ -1,15 +1,28 @@
- .card-3 {
+ .card-101 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 48px;
-    padding: 50px 100px;
     position: relative;
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
     background-color: var(--bg);
+    padding-top: 50px;
+  }
+
+  .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    font-family: var(--body2-sbold-font-family);
+    font-weight: var(--body2-sbold-font-weight);
+    color: var(--white);
+    font-size: var(--body2-sbold-font-size);
+    letter-spacing: var(--body2-sbold-letter-spacing);
+    line-height: var(--body2-sbold-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-sbold-font-style);
   }
   
    .frame-10 {
@@ -199,6 +212,7 @@
     height: 800px;
     position: relative;
     object-fit: cover;
+    margin-top: 48px;
   }
   
    .nav-bar-5 {

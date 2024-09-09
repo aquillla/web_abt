@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/components/pkgcard/sept/sept-style.css" />
   </head>
   <body>
-    <div class="card-3">
+    <div class="card-102">
         <div class="frame-10">
             <div class="frame-13">
                 <div class="frame-14"><div class="text-wrapper-12">September</div></div>

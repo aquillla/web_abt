@@ -135,12 +135,3 @@
   flex: 0 0 auto;
   align-self: stretch;
 }
-
-.text-wrapper-2,
-.text-wrapper-3,
-.text-wrapper-4,
-.nav-bar-2,
-.nav-bar-3 .text-wrapper-10,
-.nav-bar-4 .text-wrapper-11 {
-  cursor: pointer;
-}

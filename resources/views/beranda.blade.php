@@ -11,18 +11,22 @@
   <body>
     <div class="home">
       <div class="overlap-wrapper">
-        <div class="overlap">
-          <div class="frame">
-            <!-- @include('components.hero') -->
-            <!-- @include('components.services') -->
-            <!-- @include('components.packages') -->
-            <!-- @include('components.packages-haji') -->
-            <!-- @include('components.pkgcard-sept') -->
-            <!-- @include('components.pkgcard-okt') -->
-            <!-- @include('components.pkgcard-nov') -->
-            <!-- @include('components.pkgcard-des') -->
-            <!-- @include('components.pkgcard-promo') -->
-          </div>
+        <div class="frame">
+          @include('components.hero')
+          @include('components.services')
+          {{-- @yield('packages') --}}
+          @include('components.packages-umroh')
+          {{-- @include('components.packages-haji') --}}
+          {{-- @include('components.pkgcard-sept') --}}
+          {{-- @include('components.pkgcard-okt') --}}
+          {{-- @include('components.pkgcard-nov') --}}
+          {{-- @include('components.pkgcard-des') --}}
+          {{-- @include('components.pkgcard-promo') --}}
+          <br>
+          @include('components.gallery-umrohmaulid-2022-1')
+          {{-- @include('components.gallery-umrohmaulid-2022-2') --}}
+          @include('components.kantorkami')
+          @include('components.footer')
         </div>
       </div>
     </div>
@@ -37,6 +41,7 @@
       function contactAdmin() {
         window.location.href = 'https://wa.me/085259742624'; // WhatsApp link
       }
+
     </script>
 
   </body>

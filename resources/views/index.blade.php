@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="styleguide-beranda.css" />
-    <link rel="stylesheet" href="style-beranda.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="home">

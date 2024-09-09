@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <title>Anggun Bestari Tour - Paket Travel</title>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/pages/pakettravel/pakettravel-styleguide.css" />
     <link rel="stylesheet" href="css/pages/pakettravel/pakettravel-style.css" />

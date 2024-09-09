@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () { return view('index');});
+Route::get('/', function () { return view('beranda');});
 Route::get('/tentang-kami', function () { return view('tentangkami');});
 Route::get('/paket-travel', function () { return view('pakettravel');});
+Route::get('/packages-umroh', function () {
+    return view('components.packages-umroh');
+});
+Route::get('/packages-haji', function () {
+    return view('components.packages-haji');
+});

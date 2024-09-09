@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <title>Anggun Bestari Tour - Tentang Kami</title>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/pages/tentangkami/tentangkami-styleguide.css" />
     <link rel="stylesheet" href="css/pages/tentangkami/tentangkami-style.css" />

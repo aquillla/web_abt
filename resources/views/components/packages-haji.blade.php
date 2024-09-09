@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="css/components/packages/packages-haji-styleguide.css" />
     <link rel="stylesheet" href="css/components/packages/packages-haji-style.css" />
   </head>
+  {{-- @extends('beranda')
+  @section('packages') --}}
   <body>
-    <div class="card-3">
+    <div class="card-101">
         <div class="frame-10">
         <div class="frame-11">
             <div class="text-wrapper-8">Pilih Paket Perjalanan</div>
@@ -17,7 +19,10 @@
             <div class="nav-bar-4"><div class="text-wrapper-11" onclick="navigateTo('')">Umroh</div></div>
             <div class="nav-bar-3"><div class="text-wrapper-10">Haji</div></div>
         </div>
+        <img class="image" src="img/Haji Brosur.png" />
+        <div class="nav-bar-5"><div class="text-wrapper-2" onclick="navigateTo('')">Lihat Semua</div></div>
     </div>
+    {{-- @endsection --}}
 
     <script>
       function navigateTo(url) {
