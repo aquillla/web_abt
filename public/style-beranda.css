@@ -24,6 +24,10 @@
   overflow-x: hidden;
 }
 
+#packages-container {
+  width: 100% !important;
+}
+
 
 
 

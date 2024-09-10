@@ -13,6 +13,7 @@
         <div class="text-wrapper-2" onclick="navigateTo('')">Beranda</div>
         <div class="text-wrapper-3" onclick="navigateTo('tentang-kami')">Tentang Kami</div>
         <div class="text-wrapper-3" onclick="navigateTo('paket-travel')">Paket Travel</div>
+        <div class="text-wrapper-3" onclick="navigateTo('galeri-testimoni')">Galeri & Testimoni</div>
       </div>
       <div class="frame-2">
         <div class="hubungi-admin-wrapper">

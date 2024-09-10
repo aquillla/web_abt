@@ -14,16 +14,13 @@
         <div class="frame">
           @include('components.hero')
           @include('components.services')
-          {{-- @yield('packages') --}}
-          @include('components.packages-umroh')
-          {{-- @include('components.packages-haji') --}}
-          {{-- @include('components.pkgcard-sept') --}}
-          {{-- @include('components.pkgcard-okt') --}}
-          {{-- @include('components.pkgcard-nov') --}}
-          {{-- @include('components.pkgcard-des') --}}
-          {{-- @include('components.pkgcard-promo') --}}
+          
+          <!-- Dynamic Packages Component Container -->
+          <div id="packages-container">
+            @include('components.packages-umroh')
+          </div>
           <br>
-          @include('components.gallery-umrohmaulid-2022-1')
+          {{-- @include('components.gallery-umrohmaulid-2022-1') --}}
           {{-- @include('components.gallery-umrohmaulid-2022-2') --}}
           @include('components.kantorkami')
           @include('components.footer')
@@ -42,6 +39,17 @@
         window.location.href = 'https://wa.me/085259742624'; // WhatsApp link
       }
 
+      // Function to dynamically replace components
+      function replaceComponent(type) {
+        // Use AJAX to fetch the new component
+        fetch(`/packages/${type}`)
+          .then(response => response.text())
+          .then(html => {
+            // Replace the content inside the packages container without reloading the page
+            document.getElementById('packages-container').innerHTML = html;
+          })
+          .catch(error => console.error('Error fetching component:', error));
+      }
     </script>
 
   </body>
