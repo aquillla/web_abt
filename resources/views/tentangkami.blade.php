@@ -97,7 +97,7 @@
                 </div>
                 <div class="frame-13" onclick="contactEmail()">
                   <img class="img-2" src="img/ic-round-email.svg" />
-                  <div class="text-wrapper-11" onclick="contactEmail()">pt.anggunbestaritour@gmail.com</div>
+                  <div class="text-wrapper-11" onclick="contactEmail()">pt.anggunbestari@gmail.com</div>
                 </div>
               </div>
             </div>
@@ -125,7 +125,7 @@
       }
 
       function contactEmail() {
-        window.location.href = 'mailto:pt.anggunbestaritour@gmail.com'; 
+        window.location.href = 'mailto:pt.anggunbestari@gmail.com'; 
       }
     </script>
 

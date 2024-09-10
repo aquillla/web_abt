@@ -15,6 +15,7 @@
           @include('components.hero')
           @include('components.services')
           @include('components.packages-selector')
+          @include('components.gallery')
           @include('components.kantorkami')
           @include('components.footer')
         </div>

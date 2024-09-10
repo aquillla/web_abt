@@ -8,7 +8,7 @@
   </head>
   <body>
     <div class="card-105">
-        <img class="image" src="img/image-11.png" />
+        <img class="image" src="img/8 (2).png" />
         <div class="nav-bar-5"><div class="text-wrapper-2" onclick="navigateTo('paket-travel')">Lihat Semua</div></div>
     </div>
 
