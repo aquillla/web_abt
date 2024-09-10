@@ -21,7 +21,7 @@
               <img src="img/9.png" alt="Image 3">
           </div>
         </div>
-        <div class="nav-bar-5"><div class="text-wrapper-2" onclick="navigateTo('')">Lihat Semua</div></div>
+        <div class="nav-bar-5"><div class="text-wrapper-2" onclick="navigateTo('paket-travel')">Lihat Semua</div></div>
     </div>
 
     <script>

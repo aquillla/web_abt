@@ -8,6 +8,7 @@
     width: 100%;
     flex: 0 0 auto;
     background-color: var(--bg);
+    padding-top: 50px;
   }
   
    .frame-10 {

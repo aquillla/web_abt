@@ -11,11 +11,16 @@
       <div class="frame-10">
         <img class="image" src="img/Haji Brosur.png" />
         <div class="nav-bar-5">
-          <div class="text-wrapper-2">
+          <div class="text-wrapper-2" onclick="navigateTo('paket-travel')">
             Lihat Semua
           </div>
         </div>
       </div>
     </div>
+    <script>
+      function navigateTo(url) {
+        window.location.href = url;
+      }
+    </script>
   </body>
 </html>

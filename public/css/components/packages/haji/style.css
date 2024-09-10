@@ -23,6 +23,7 @@
     line-height: var(--body2-sbold-line-height);
     white-space: nowrap;
     font-style: var(--body2-sbold-font-style);
+    cursor: pointer;
   }
   
    .frame-10 {

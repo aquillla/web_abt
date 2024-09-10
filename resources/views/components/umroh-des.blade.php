@@ -9,7 +9,7 @@
   <body>
     <div class="card-105">
         <img class="image" src="img/image-11.png" />
-        <div class="nav-bar-5"><div class="text-wrapper-2" onclick="navigateTo('')">Lihat Semua</div></div>
+        <div class="nav-bar-5"><div class="text-wrapper-2" onclick="navigateTo('paket-travel')">Lihat Semua</div></div>
     </div>
 
     <script>

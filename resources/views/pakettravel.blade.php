@@ -4,8 +4,8 @@
     <meta charset="utf-8" />
     <title>Anggun Bestari Tour - Paket Travel</title>
     <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="css/pages/pakettravel/pakettravel-styleguide.css" />
-    <link rel="stylesheet" href="css/pages/pakettravel/pakettravel-style.css" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/pages/pakettravel/style.css" />
   </head>
   <body>
     <div class="desktop">
@@ -20,6 +20,7 @@
                   <div class="text-wrapper-2" onclick="navigateTo('/')">Beranda</div>
                   <div class="text-wrapper-2" onclick="navigateTo('tentang-kami')">Tentang Kami</div>
                   <div class="text-wrapper-3" onclick="navigateTo('paket-travel')">Paket Travel</div>
+                  <div class="text-wrapper-2" onclick="navigateTo('galeri-testimoni')">Galeri & Testimoni</div>
                 </div>
               </div>
             </div>

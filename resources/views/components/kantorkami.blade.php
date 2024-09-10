@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="css/components/kantorkami/kantorkami-styleguide.css" />
-    <link rel="stylesheet" href="css/components/kantorkami/kantorkami-style.css" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/components/kantorkami/style.css" />
   </head>
   <body>
     <div class="card-7">
