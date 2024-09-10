@@ -1,16 +1,13 @@
- .card-102 {
+ .card-100 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 48px;
-    padding-top: 50px;
     position: relative;
     align-self: stretch;
     width: 100%;
     flex: 0 0 auto;
     background-color: var(--bg);
-    padding-bottom: 48px;
   }
   
    .frame-10 {
@@ -59,6 +56,7 @@
     letter-spacing: var(--body2-reg-letter-spacing);
     line-height: var(--body2-reg-line-height);
     font-style: var(--body2-reg-font-style);
+    width: 550px;
   }
   
    .frame-12 {
@@ -71,62 +69,6 @@
     flex: 0 0 auto;
     background-color: var(--white);
     border-radius: 999px;
-  }
-  
-   .nav-bar-3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 36px;
-    padding: 16px;
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-    background-color: var(--primarysoft-green);
-    border-radius: 999px;
-  }
-  
-   .text-wrapper-10 {
-    position: relative;
-    width: fit-content;
-    margin-top: -0.5px;
-    font-family: var(--body2-sbold-font-family);
-    font-weight: var(--body2-sbold-font-weight);
-    color: var(--white);
-    font-size: var(--body2-sbold-font-size);
-    text-align: center;
-    letter-spacing: var(--body2-sbold-letter-spacing);
-    line-height: var(--body2-sbold-line-height);
-    white-space: nowrap;
-    font-style: var(--body2-sbold-font-style);
-  }
-  
-   .nav-bar-4 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 36px;
-    padding: 16px;
-    position: relative;
-    flex: 1;
-    flex-grow: 1;
-    border-radius: 999px;
-  }
-  
-   .text-wrapper-11 {
-    position: relative;
-    width: fit-content;
-    margin-top: -0.5px;
-    font-family: var(--body2-reg-font-family);
-    font-weight: var(--body2-reg-font-weight);
-    color: var(--primarysoft-green);
-    font-size: var(--body2-reg-font-size);
-    text-align: center;
-    letter-spacing: var(--body2-reg-letter-spacing);
-    line-height: var(--body2-reg-line-height);
-    white-space: nowrap;
-    font-style: var(--body2-reg-font-style);
-    cursor: pointer;
   }
 
    .text-wrapper-11:hover {
@@ -171,14 +113,15 @@
     position: relative;
     width: fit-content;
     margin-top: -1px;
-    font-family: var(--body2-sbold-font-family);
-    font-weight: var(--body2-sbold-font-weight);
-    color: var(--primarysoft-green);
-    font-size: var(--body2-sbold-font-size);
-    letter-spacing: var(--body2-sbold-letter-spacing);
-    line-height: var(--body2-sbold-line-height);
+    font-family: var(--body2-reg-font-family);
+    font-weight: var(--body2-reg-font-weight);
+    color: var(--grey);
+    font-size: var(--body2-reg-font-size);
+    letter-spacing: var(--body2-reg-letter-spacing);
+    line-height: var(--body2-reg-line-height);
     white-space: nowrap;
-    font-style: var(--body2-sbold-font-style);
+    font-style: var(--body2-reg-font-style);
+    cursor: pointer;
   }
   
    .text-wrapper-13 {
@@ -194,10 +137,6 @@
     white-space: nowrap;
     font-style: var(--body2-reg-font-style);
     cursor: pointer;
-  }
-
-  .text-wrapper-13:hover {
-    color: #032C28;
   }
   
    .image {
@@ -218,8 +157,40 @@
     background-color: var(--primarysoft-green);
     border-radius: 8px;
   }
+  
+  .text-wrapper-13:hover {
+    color: #032C28;
+    transition: 0.3s;
+    font-weight: bold;
+  }
 
-  .text-wrapper-2 {
+  .nav-bar-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    background-color: var(--primarysoft-green);
+    border-radius: 999px;
+    cursor: not-allowed;
+  }
+
+  .nav-bar-inactive {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 16px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+    border-radius: 999px;
+  }
+
+  .packages-active {
     position: relative;
     width: fit-content;
     margin-top: -0.5px;
@@ -227,15 +198,26 @@
     font-weight: var(--body2-sbold-font-weight);
     color: var(--white);
     font-size: var(--body2-sbold-font-size);
+    text-align: center;
     letter-spacing: var(--body2-sbold-letter-spacing);
     line-height: var(--body2-sbold-line-height);
     white-space: nowrap;
     font-style: var(--body2-sbold-font-style);
+    cursor: not-allowed;
+  }
+
+  .packages-inactive {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    font-family: var(--body2-reg-font-family);
+    font-weight: var(--body2-reg-font-weight);
+    color: var(--primarysoft-green);
+    font-size: var(--body2-reg-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-reg-letter-spacing);
+    line-height: var(--body2-reg-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-reg-font-style);
     cursor: pointer;
   }
-
-  .text-wrapper-2:hover {
-    font-weight: 700;
-  }
-
-  

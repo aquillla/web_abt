@@ -3,20 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="css/components/pkgcard/sept/sept-styleguide.css" />
-    <link rel="stylesheet" href="css/components/pkgcard/sept/sept-style.css" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/components/packages/umroh/sept/style.css" />
   </head>
   <body>
     <div class="card-102">
-        <div class="frame-10">
-            <div class="frame-13">
-                <div class="frame-14"><div class="text-wrapper-12">September</div></div>
-                <div class="frame-15"><div class="text-wrapper-13" onclick="replaceComponent('pkgcard-okt')">Oktober</div></div>
-                <div class="frame-15"><div class="text-wrapper-13" onclick="replaceComponent('pkgcard-nov')">November</div></div>
-                <div class="frame-15"><div class="text-wrapper-13" onclick="replaceComponent('pkgcard-des')">Desember</div></div>
-                <div class="frame-15"><div class="text-wrapper-13" onclick="replaceComponent('pkgcard-promo')">Promo!</div></div>
-            </div>
-        </div>
         <img class="image" src="img/image-12.png" />
         <div class="nav-bar-5"><div class="text-wrapper-2" onclick="navigateTo('')">Lihat Semua</div></div>
     </div>

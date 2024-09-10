@@ -3,20 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="css/components/pkgcard/nov/nov-styleguide.css" />
-    <link rel="stylesheet" href="css/components/pkgcard/nov/nov-style.css" />
+    <link rel="stylesheet" href="css/styleguide.css" />
+    <link rel="stylesheet" href="css/components/packages/umroh/nov/style.css" />
   </head>
   <body>
     <div class="card-104">
-        <div class="frame-10">
-            <div class="frame-13">
-                <div class="frame-15"><div class="text-wrapper-13" onclick="navigateTo('')">September</div></div>
-                <div class="frame-15"><div class="text-wrapper-13" onclick="navigateTo('')">Oktober</div></div>
-                <div class="frame-14"><div class="text-wrapper-12">November</div></div>
-                <div class="frame-15"><div class="text-wrapper-13" onclick="navigateTo('')">Desember</div></div>
-                <div class="frame-15"><div class="text-wrapper-13" onclick="navigateTo('')">Promo!</div></div>
-            </div>
-        </div>
         <div class="container">
           <div class="image-row">
               <div class="image-item">
