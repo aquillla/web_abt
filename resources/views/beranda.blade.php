@@ -12,7 +12,7 @@
     <div class="home">
       <div class="overlap-wrapper">
         <div class="frame">
-          @include('components.hero') 
+          @include('components.packages-selector')
         </div>
       </div>
     </div>

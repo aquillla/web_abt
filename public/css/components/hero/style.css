@@ -27,7 +27,7 @@
   left: 0;
 }
 
-.hero .div {
+.hero .motto {
   position: absolute;
   width: 931px;
   top: 197px;
@@ -92,7 +92,7 @@
   left: 64px;
 }
 
-.hero .hubungi-admin-wrapper {
+.hero .lihat-paket-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -104,7 +104,7 @@
   border-radius: 8px;
 }
 
-.hero .text-wrapper-4 {
+.hero .lihat-paket {
   position: relative;
   width: fit-content;
   margin-top: -0.5px;
@@ -136,16 +136,8 @@
   height: 24px;
 }
 
-.hero .white-logo {
-  position: absolute;
-  width: 89px;
-  height: 67px;
-  top: 48px;
-  left: 64px;
-}
-
 .hero .text-wrapper-3,
-.hero .text-wrapper-4,
+.hero .lihat-paket,
 .hero .nav-bar-2 {
   cursor: pointer;
 }
@@ -159,6 +151,7 @@
   background-image: url(/img/hero.png);
   background-size: cover;
   background-position: 50% 50%;
+  z-index: 1;
 }
 
 .text-wrapper-3:hover {
@@ -166,17 +159,132 @@
   transition: 0.3s;
 }
 
-/* Mobile responsiveness */
+/* Mobile Wrapper */
+.mobile-wrapper {
+  display: none; /* Hide on desktop */
+}
+
+.nav-bar-mobile {
+  display: flex;
+  width: 428px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--primarydark-green);
+}
+
+.nav-bar-mobile-expand-menu {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  background-color: var(--primarydark-green);
+  font-family: var(--body2-sbold-font-family);
+  width: 100%;
+  padding: 24px;
+  padding-top: 0px;
+  text-align: left;
+  color: white;
+  z-index: 10;
+}
+
+.nav-bar-mobile-expand-menu p {
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.hero .white-logo {
+  position: absolute;
+  width: 89px;
+  height: 67px;
+  top: 48px;
+  left: 64px;
+  cursor: pointer;
+}
+
+.white-logo-mobile {
+  position: relative;
+  width: 42.51px;
+  height: 32px;
+}
+
+.hamburger-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.cross-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+/* Responsive Media Queries */
 @media (max-width: 428px) {
   .hero {
-    width: 428px;
-    height: 926px;
-    object-fit: contain;
+    height: 850px;
   }
 
   .hero .white-logo {
-    position: absolute;
-    width: 52px;
-    height: 42px;
-}
+    display: none;
+  }
+  /* Show mobile wrapper and hide desktop nav */
+  .mobile-wrapper {
+    display: block;
+  }
+
+  .nav-bar {
+    display: none; /* Hide desktop nav on mobile */
+  }
+
+  .hero .motto {
+    position: relative;
+    width: 400px;
+    top: 400px;
+    left: 24px;
+    flex: 1;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--title3-regular-font-family);
+    font-weight: var(--title3-regular-font-weight);
+    color: var(--white);
+    font-size: var(--title3-regular-font-size);
+    letter-spacing: var(--title3-regular-letter-spacing);
+    line-height: var(--title3-regular-line-height);
+    font-style: var(--title3-regular-font-style);
+  }
+
+  .hero .frame-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 24px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    top: 600px;
+    left: 24px;
+  }
+  
+  .hero .lihat-paket-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--white);
+    border-radius: 8px;
+  }
+
+  .white-logo {
+    width: 40px; /* Adjust logo size for mobile */
+  }
+
+  .hamburger-icon {
+    width: 25px; /* Adjust menu icon size for mobile */
+  }
 }

@@ -29,7 +29,7 @@
   position: relative;
   align-self: stretch;
   width: 100%;
-  height: 1px;
+  height: 2px;
   object-fit: cover;
 }
 
@@ -134,4 +134,248 @@
   position: relative;
   flex: 0 0 auto;
   align-self: stretch;
+}
+
+.mobile-why-us {
+  display: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 428px) {
+  .frame-3, .frame-7 {
+    display: none;
+  }
+
+  .mobile-why-us {
+    display: block;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--primarydark-green);
+  }
+
+  .text-wrapper-5 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -0.5px;
+    font-family: "Archivo Black", Helvetica;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 32.4px;
+    text-align: left;
+  }
+
+  .vector {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 2px;
+    object-fit: cover;
+  }
+
+  .mobile-why-us {
+    position: relative;
+    width: 428px;
+    height: 264px;
+    margin-left: -24px;
+    margin-right: -24px;
+    overflow: hidden;
+  }
+
+  .overlap-group {
+    position: absolute;
+    width: 428px;
+    height: 160px;
+    top: 52px;
+    left: 0;
+  }
+
+  .component {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 56px;
+    left: 0;
+  }
+
+  .frame-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    position: absolute;
+    top: 0;
+    left: 32px;
+    background-color: #ffffff33;
+    border-radius: 12px;
+  }
+
+  .frame-300 {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .img-2 {
+    position: relative;
+    width: 48px;
+    height: 48px;
+  }
+
+  .frame-4 {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .text-wrapper-500 {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body2-sbold-font-family);
+    font-weight: var(--body2-sbold-font-weight);
+    color: var(--white);
+    font-size: var(--body2-sbold-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-sbold-letter-spacing);
+    line-height: var(--body2-sbold-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-sbold-font-style);
+  }
+
+  .p {
+    position: relative;
+    width: 260px;
+    font-family: var(--body2-reg-font-family);
+    font-weight: var(--body2-reg-font-weight);
+    color: var(--white);
+    font-size: var(--body2-reg-font-size);
+    letter-spacing: var(--body2-reg-letter-spacing);
+    line-height: var(--body2-reg-line-height);
+    font-style: var(--body2-reg-font-style);
+    text-align: left;
+  }
+
+  .component-2 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 56px;
+    left: 380px;
+  }
+
+  .div-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    position: absolute;
+    top: 13px;
+    left: 428px;
+    background-color: #ffffff33;
+    border-radius: 12px;
+  }
+
+  .solar-hand-heart {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-top: -12480px;
+    margin-left: -4842px;
+  }
+
+  .solar-hand-stars {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-top: -12506px;
+    margin-left: -5206px;
+  }
+
+  .card-2 {
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    position: absolute;
+    top: 39px;
+    left: 792px;
+    background-color: #ffffff33;
+    border-radius: 12px;
+  }
+
+  .card-3 {
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    position: absolute;
+    top: 0;
+    left: 1156px;
+    background-color: #ffffff33;
+    border-radius: 12px;
+  }
+
+  .solar-folder {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-top: -12467px;
+    margin-left: -5570px;
+  }
+
+  .card-4 {
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    position: absolute;
+    top: 26px;
+    left: 1520px;
+    background-color: #ffffff33;
+    border-radius: 12px;
+  }
+
+  .solar-tag-price-bold {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    margin-top: -12493px;
+    margin-left: -5934px;
+  }
 }
