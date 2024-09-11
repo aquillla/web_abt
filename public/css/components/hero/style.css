@@ -144,7 +144,6 @@
   left: 64px;
 }
 
-.hero .text-wrapper-2,
 .hero .text-wrapper-3,
 .hero .text-wrapper-4,
 .hero .nav-bar-2 {
@@ -160,4 +159,24 @@
   background-image: url(/img/hero.png);
   background-size: cover;
   background-position: 50% 50%;
+}
+
+.text-wrapper-3:hover {
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 428px) {
+  .hero {
+    width: 428px;
+    height: 926px;
+    object-fit: contain;
+  }
+
+  .hero .white-logo {
+    position: absolute;
+    width: 52px;
+    height: 42px;
+}
 }

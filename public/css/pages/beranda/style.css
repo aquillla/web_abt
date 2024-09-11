@@ -29,5 +29,23 @@
 }
 
 
+/* Mobile responsiveness */
+@media (max-width: 428px) {
+  .home {
+    width: 428px;
+    height: auto;
+    object-fit: contain;
+  }
 
+  .home .overlap-wrapper {
+    width: 428px;
+    height: auto;
+    background-color: var(--white);
+  }
+
+  .home .frame {
+    width: 428px;
+    height: auto;
+  }
+}
 

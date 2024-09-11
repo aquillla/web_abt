@@ -10,7 +10,7 @@
     <div class="hero">
       <p class="div">Menuju Baitullah dengan Aman dan Nyaman Bersama PT. Anggun Bestari Tour</p>
       <div class="nav-bar">
-        <div class="text-wrapper-2" onclick="navigateTo('')">Beranda</div>
+        <div class="text-wrapper-2">Beranda</div>
         <div class="text-wrapper-3" onclick="navigateTo('tentang-kami')">Tentang Kami</div>
         <div class="text-wrapper-3" onclick="navigateTo('paket-travel')">Paket Travel</div>
         <div class="text-wrapper-3" onclick="navigateTo('galeri-testimoni')">Galeri & Testimoni</div>

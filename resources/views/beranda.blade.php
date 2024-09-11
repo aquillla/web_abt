@@ -12,12 +12,7 @@
     <div class="home">
       <div class="overlap-wrapper">
         <div class="frame">
-          @include('components.hero')
-          @include('components.services')
-          @include('components.packages-selector')
-          @include('components.gallery')
-          @include('components.kantorkami')
-          @include('components.footer')
+          @include('components.hero') 
         </div>
       </div>
     </div>

@@ -1,17 +1,3 @@
-.text-wrapper-2 {
-  position: relative;
-  width: fit-content;
-  margin-top: -0.5px;
-  font-family: var(--body2-sbold-font-family);
-  font-weight: var(--body2-sbold-font-weight);
-  color: var(--white);
-  font-size: var(--body2-sbold-font-size);
-  letter-spacing: var(--body2-sbold-letter-spacing);
-  line-height: var(--body2-sbold-line-height);
-  white-space: nowrap;
-  font-style: var(--body2-sbold-font-style);
-}
-
  .text-wrapper-4 {
   position: relative;
   width: fit-content;
@@ -362,6 +348,6 @@
   font-style: var(--body2-sbold-font-style);
 }
 
- .nav-bar-7, .nav-bar-9, .text-wrapper-2, .frame-19, .text-wrapper-15, .text-wrapper-98  {
+ .nav-bar-7, .nav-bar-9, .frame-19, .text-wrapper-15, .text-wrapper-98  {
   cursor: pointer;
 }

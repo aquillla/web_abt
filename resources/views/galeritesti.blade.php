@@ -7,6 +7,6 @@
     <title>Anggun Bestari Tour - Galeri</title>
 </head>
 <body>
-    <h1>test</h1>
+    @include('components.gallery-full')
 </body>
 </html>

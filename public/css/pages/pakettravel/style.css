@@ -94,11 +94,12 @@
 }
 
 /* General Hover Effect */
- .text-wrapper-2:hover,
- .text-wrapper-3:hover {
-  font-weight: 700;
+ .text-wrapper-200:hover {
+  font-weight: 600;
+  transition: 0.3s;
 }
 
 #packages-container {
   width: 100%;
 }
+
