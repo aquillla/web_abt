@@ -506,3 +506,66 @@
   font-weight: 600;
   transition: 0.3s;
 }
+
+.nav-bar-mobile {
+  display: flex;
+  width: 428px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  position: relative;
+  flex: 0 0 auto;
+  background-color: var(--primarydark-green);
+}
+
+.nav-bar-mobile-expand-menu {
+  display: none;
+  position: fixed;
+  flex-direction: column;
+  background-color: var(--primarydark-green);
+  font-family: var(--body2-sbold-font-family);
+  width: 100%;
+  padding: 24px;
+  padding-top: 0px;
+  text-align: left;
+  color: white;
+  z-index: 10;
+}
+
+.nav-bar-mobile-expand-menu p {
+  margin: 16px 0;
+  cursor: pointer;
+}
+
+.white-logo-mobile {
+  position: relative;
+  width: 42.51px;
+  height: 32px;
+}
+
+.hamburger-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.cross-icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+.mobile-wrapper {
+  display: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 428px) {
+  .mobile-wrapper {
+    display: block;
+  }
+  
+  .desktop {
+    display: none;
+  }
+
+}

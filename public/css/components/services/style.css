@@ -1,4 +1,4 @@
-.card {
+.card-services {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,7 +25,7 @@
   font-style: var(--title2-regular-font-style);
 }
 
-.vector {
+.vector-services {
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -43,7 +43,7 @@
   flex: 0 0 auto;
 }
 
-.frame-wrapper,
+.frame-wrapper-services,
 .div-wrapper {
   display: flex;
   align-items: center;
@@ -71,13 +71,13 @@
   flex-grow: 1;
 }
 
-.img-2 {
+.img-2-services {
   position: relative;
   width: 48px;
   height: 48px;
 }
 
-.text-wrapper-6 {
+.text-wrapper-6-services {
   position: relative;
   align-self: stretch;
   font-family: var(--body2-sbold-font-family);
@@ -150,7 +150,7 @@
     display: block;
   }
 
-  .card {
+  .card-services {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -177,7 +177,7 @@
     text-align: left;
   }
 
-  .vector {
+  .vector-services {
     position: relative;
     align-self: stretch;
     width: 100%;
@@ -202,7 +202,7 @@
     left: 0;
   }
 
-  .component {
+  .component-services {
     position: absolute;
     width: 48px;
     height: 48px;
@@ -210,7 +210,7 @@
     left: 0;
   }
 
-  .frame-wrapper {
+  .frame-wrapper-services {
     display: flex;
     flex-direction: column;
     width: 364px;
@@ -235,7 +235,7 @@
     flex: 0 0 auto;
   }
 
-  .img-2 {
+  .img-2-services {
     position: relative;
     width: 48px;
     height: 48px;
@@ -354,21 +354,6 @@
     height: 48px;
     margin-top: -12467px;
     margin-left: -5570px;
-  }
-
-  .card-4 {
-    display: flex;
-    flex-direction: column;
-    width: 364px;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-    padding: 24px;
-    position: absolute;
-    top: 26px;
-    left: 1520px;
-    background-color: #ffffff33;
-    border-radius: 12px;
   }
 
   .solar-tag-price-bold {

@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/components/footer/style.css" />
@@ -13,11 +14,11 @@
           <img class="img" src="img/ri-instagram-fill-1.svg" />
           <div class="text-wrapper-22" onclick="contactInstagram()">anggunbestaritour</div>
         </div>
-        <div class="frame-19" onclick="contactAdmin1()">
+        <div class="frame-19-footer" onclick="contactAdmin1()">
           <img class="img" src="img/mingcute-whatsapp-fill.svg" />
           <div class="text-wrapper-22" onclick="contactAdmin1()">085259742624</div>
         </div>
-        <div class="frame-19" onclick="contactAdmin2()">
+        <div class="frame-19-footer" onclick="contactAdmin2()">
           <img class="img" src="img/mingcute-whatsapp-fill.svg" />
           <div class="text-wrapper-22" onclick="contactAdmin2()">085259742625</div>
         </div>

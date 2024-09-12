@@ -14,7 +14,7 @@
 }
 
 .image {
-  width: 565px !important;
+  width: 565px;
   height: 800px;
   position: relative;
   object-fit: contain !important;
@@ -33,7 +33,7 @@
   border-radius: 8px;
 }
 
-.text-wrapper-2 {
+.text-wrapper-2-des {
   position: relative;
   width: fit-content;
   margin-top: -0.5px;
@@ -48,6 +48,15 @@
   cursor: pointer;
 }
 
-.text-wrapper-2:hover {
+.text-wrapper-2-des:hover {
   font-weight: 700;
+}
+
+@media (max-width: 428px) {
+  .image {
+    width: 295.21px;
+    height: 418px;
+    position: relative;
+    object-fit: cover;
+  }
 }

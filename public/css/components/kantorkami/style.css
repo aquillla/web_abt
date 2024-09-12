@@ -62,7 +62,6 @@
   text-align: center;
   letter-spacing: var(--body2-reg-letter-spacing);
   line-height: var(--body2-reg-line-height);
-  white-space: nowrap;
   font-style: var(--body2-reg-font-style);
 }
 
@@ -126,7 +125,7 @@
   flex: 0 0 auto;
 }
 
-.text-wrapper-15 {
+.text-kantorkami {
   font-family: var(--body2-reg-font-family);
   font-weight: var(--body2-reg-font-weight);
   color: var(--white);
@@ -139,4 +138,169 @@
   line-height: var(--body2-reg-line-height);
   white-space: nowrap;
   font-style: var(--body2-reg-font-style);
+}
+
+/* Responsive Media Queries */
+@media (max-width: 428px) {
+  .card-7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--white);
+  }
+
+  .image-2 {
+    width: 297.79px;
+    height: 250px;
+    position: relative;
+    object-fit: cover;
+  }
+
+  .frame-24 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--primarydark-green);
+    border-radius: var(--shape-corner-medium);
+    overflow: hidden;
+    border: 1px solid;
+    border-color: var(--white);
+  }
+
+  .group {
+    position: absolute;
+    width: 380px;
+    height: 270px;
+    top: 0;
+    left: 0;
+  }
+
+  .frame-25 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .text-wrapper-18 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: "Archivo Black", Helvetica;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 32.4px;
+  }
+
+  .text-wrapper-19 {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--body3-reg-font-family);
+    font-weight: var(--body3-reg-font-weight);
+    color: var(--white);
+    font-size: var(--body3-reg-font-size);
+    letter-spacing: var(--body3-reg-letter-spacing);
+    line-height: var(--body3-reg-line-height);
+    font-style: var(--body3-reg-font-style);
+    text-align: left;
+  }
+
+  .frame-26 {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .bx-building-house {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+
+  .frame-27 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+
+  .text-wrapper-20 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--body2-sbold-font-family);
+    font-weight: var(--body2-sbold-font-weight);
+    color: var(--white);
+    font-size: var(--body2-sbold-font-size);
+    letter-spacing: var(--body2-sbold-letter-spacing);
+    line-height: var(--body2-sbold-line-height);
+    font-style: var(--body2-sbold-font-style);
+  }
+
+  .text-wrapper-21 {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--body2-reg-font-family);
+    font-weight: var(--body2-reg-font-weight);
+    color: var(--white);
+    font-size: var(--body2-reg-font-size);
+    letter-spacing: var(--body2-reg-letter-spacing);
+    line-height: var(--body2-reg-line-height);
+    font-style: var(--body2-reg-font-style);
+  }
+
+  .frame-28 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .img {
+    position: relative;
+    width: 16px;
+    height: 16px;
+  }
+
+  .text-kantorkami {
+    position: relative;
+    width: fit-content;
+    margin-top: -1px;
+    font-family: var(--body2-reg-font-family);
+    font-weight: var(--body2-reg-font-weight);
+    color: var(--white);
+    font-size: var(--body2-reg-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-reg-letter-spacing);
+    line-height: var(--body2-reg-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-reg-font-style);
+  }
 }

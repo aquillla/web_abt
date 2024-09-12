@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/components/kantorkami/style.css" />
@@ -26,11 +27,11 @@
             </p>
             <div class="frame-28">
               <img class="img" src="img/ic-outline-whatsapp-1.svg" />
-              <div class="text-wrapper-15">085259742624</div>
+              <div class="text-kantorkami">085259742624</div>
             </div>
             <div class="frame-28">
               <img class="img" src="img/ic-outline-whatsapp-1.svg" />
-              <div class="text-wrapper-15">085259742625</div>
+              <div class="text-kantorkami">085259742625</div>
             </div>
           </div>
         </div>

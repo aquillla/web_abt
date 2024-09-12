@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/components/packages/selector/style.css" />
@@ -45,13 +46,13 @@
   <body>
     <div class="card-100">
       <div class="frame-10">
-        <div class="frame-11">
+        <div class="frame-110">
           <div class="text-wrapper-8">Pilih Paket Perjalanan</div>
           <p class="text-wrapper-9">
             Dapatkan layanan maksimal, pilih layanan paket dari kami sekarang.
           </p>
         </div>
-        <div class="frame-12">
+        <div class="frame-120">
           <!-- Umroh button with initial active class -->
           <div class="nav-bar-3 nav-bar-active">
             <div class="text-wrapper-10 packages-active" onclick="selectPackage('umroh')">
@@ -72,7 +73,7 @@
           <div class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-okt')">Oktober</div>
           <div class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-nov')">November</div>
           <div class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-des')">Desember</div>
-          <div class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-promo')">Promo!</div>
+          <div id="frame-umroh" class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-promo')">Promo!</div>
         </div>
       </div>
     </div>

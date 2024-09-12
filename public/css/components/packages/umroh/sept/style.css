@@ -51,3 +51,12 @@
 .text-wrapper-195:hover {
   font-weight: 700;
 }
+
+@media (max-width: 428px) {
+  .image {
+    width: 295.21px;
+    height: 418px;
+    position: relative;
+    object-fit: cover;
+  }
+}

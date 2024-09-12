@@ -2,36 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/components/services/style.css" />
   </head>
   <body>
-    <div class="card">
+    <div class="card-services">
       <div class="text-wrapper-5">Layanan Perjalan Ibadah Profesional</div>
-      <img class="vector" src="img/Vector 1.png" />
+      <img class="vector-services" src="img/Vector 1.png" />
       <div class="frame-3">
-        <div class="frame-wrapper">
+        <div class="frame-wrapper-services">
           <div class="frame-4">
-            <img class="img-2" src="img/solar-shield-keyhole-bold.svg" />
-            <div class="text-wrapper-6">Terakdretasi</div>
+            <img class="img-2-services" src="img/solar-shield-keyhole-bold.svg" />
+            <div class="text-wrapper-6-services">Terakdretasi</div>
             <p class="p">Telah terdaftar di Kementerian Agama RI dengan SK No. 28092100388350003.</p>
           </div>
         </div>
         <div class="div-wrapper">
           <div class="frame-5">
-            <img class="img-2" src="img/solar-hand-heart-bold-duotone.svg" />
-            <div class="text-wrapper-6">Terpercaya</div>
+            <img class="img-2-services" src="img/solar-hand-heart-bold-duotone.svg" />
+            <div class="text-wrapper-6-services">Terpercaya</div>
             <p class="p">
               Memberikan layanan standar pelaksanaan ibadah Umroh sesuai dengan tuntunan Rasulullah dan
               mengupayakan kenyamanan dan kebersahajaan dalam perjalanan ibadah.
             </p>
           </div>
         </div>
-        <div class="frame-wrapper">
+        <div class="frame-wrapper-services">
           <div class="frame-6">
-            <img class="img-2" src="img/solar-hand-stars-bold-duotone.svg" />
-            <div class="text-wrapper-6">Profesional</div>
+            <img class="img-2-services" src="img/solar-hand-stars-bold-duotone.svg" />
+            <div class="text-wrapper-6-services">Profesional</div>
             <p class="p">
               Memberikan pemahaman spiritual melalui manasik dan komprehensif serta layanan fungsi intergral
               dalam perjalanan Umroh.
@@ -42,8 +43,8 @@
       <div class="frame-7">
         <div class="card-2">
           <div class="frame-8">
-            <img class="img-2" src="img/solar-folder-favourite-bookmark-bold-duotone.svg" />
-            <div class="text-wrapper-6">Dapat Diandalkan</div>
+            <img class="img-2-services" src="img/solar-folder-favourite-bookmark-bold-duotone.svg" />
+            <div class="text-wrapper-6-services">Dapat Diandalkan</div>
             <p class="text-wrapper-7">
               Memberikan jaminan layanan dan pendampingan<br />sebelum keberangkatan, selama di tanah suci<br />sampai
               kepulangan agar layanan kenyamanan<br />jamaah terpenuhi.
@@ -52,8 +53,8 @@
         </div>
         <div class="card-2">
           <div class="frame-9">
-            <img class="img-2" src="img/solar-tag-price-bold.svg" />
-            <div class="text-wrapper-6">Variasi Paket</div>
+            <img class="img-2-services" src="img/solar-tag-price-bold.svg" />
+            <div class="text-wrapper-6-services">Variasi Paket</div>
             <p class="text-wrapper-7">
               Progam yang beragam di setiap paket, sehingga<br />anda dapat memilih progam yang sesuai dengan<br />kebutuhan
               anda.
@@ -64,10 +65,10 @@
       <!-- This section will be displayed on Mobile -->
       <div class="mobile-why-us">
         <div class="overlap-group">
-          <img id="component-button" class="component" src="img/component-2-1.svg" />
-          <div class="frame-wrapper">
+          <img id="component-button" class="component-services" src="img/component-2-1.svg" />
+          <div class="frame-wrapper-services">
             <div id="frame-300-1" class="frame-300">
-              <img id="frame-img-mobile" class="img-2" src="img/solar-shield-keyhole-bold.svg" />
+              <img id="frame-img-mobile" class="img-2-services" src="img/solar-shield-keyhole-bold.svg" />
               <div class="frame-4">
                 <div id="text-wrapper-500" class="text-wrapper-500">Terakdretasi</div>
                 <p id="paragraph-500" class="p">Telah terdaftar di Kementerian Agama RI dengan SK No. 28092100388350003</p>

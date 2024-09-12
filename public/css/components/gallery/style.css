@@ -137,18 +137,6 @@
   overflow-x: hidden;
 }
 
- .overlap-group-wrapper {
-  position: relative;
-  width: 478px;
-  height: 476px;
-  overflow: hidden;
-}
-
- .overlap-group {
-  position: relative;
-  height: 476px;
-}
-
  .whatsapp-image {
   position: absolute;
   width: 478px;
@@ -195,14 +183,6 @@
   object-fit: cover;
 }
 
- .component {
-  margin-top: -11305px;
-  margin-right: -6367px;
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
  .card-6 {
   position: relative;
   width: 478px;
@@ -232,14 +212,6 @@
   position: absolute;
   height: 476px;
   object-fit: cover;
-}
-
- .component-2 {
-  margin-top: -11305px;
-  margin-right: -5889px;
-  position: relative;
-  width: 24px;
-  height: 24px;
 }
 
  .frame-23 {
@@ -302,7 +274,7 @@
   border-radius: 999px;
 }
 
-.img {
+.img-gallery {
   position: relative;
   flex: 0 0 auto;
 }
@@ -350,4 +322,296 @@
 
  .nav-bar-7, .nav-bar-9, .frame-19, .text-wrapper-15, .text-wrapper-98  {
   cursor: pointer;
+}
+
+.nav-bar, .foto {
+  display: none;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 428px) {
+  .nav-bar, .foto {
+    display: block;
+  }
+
+  .swiper-container-gallery {
+    display: none;
+  }
+
+  .card-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--primarydark-green);
+  }
+
+  .frame-16 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 0px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--primarydark-green);
+  }
+
+  .img-gallery, .text-wrapper-15 {
+    display: none;
+  }
+
+  .text-wrapper-14 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -0.5px;
+    font-family: "Archivo Black", Helvetica;
+    font-weight: 400;
+    color: var(--white);
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 32.4px;
+  }
+
+  .vector {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 2px;
+    object-fit: cover;
+  }
+
+  .foto {
+    position: relative;
+    width: 428px;
+    height: 476px;
+    margin-left: -24px;
+    margin-right: -24px;
+  }
+
+  .overlap-group-2 {
+    position: absolute;
+    width: 428px;
+    height: 476px;
+    top: 0;
+    left: 0;
+  }
+
+  #card-6 {
+    position: absolute;
+    width: 378px;
+    height: 476px;
+    top: 0;
+    left: 24px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-position: center;
+    background-image: url(/img/galeri-9.png);
+  }
+
+  .frame-11 {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    position: relative;
+    top: 394px;
+    left: 52px;
+  }
+
+  .img-mobile {
+    position: relative;
+    width: 24px;
+    height: 24px;
+  }
+
+  .text-wrapper-12 {
+    position: relative;
+    align-self: stretch;
+    font-family: var(--body2-sbold-font-family);
+    font-weight: var(--body2-sbold-font-weight);
+    color: var(--white);
+    font-size: var(--body2-sbold-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-sbold-letter-spacing);
+    line-height: var(--body2-sbold-line-height);
+    font-style: var(--body2-sbold-font-style);
+  }
+
+  .component-3 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 214px;
+    left: 380px;
+  }
+  
+  .component-4 {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    top: 214px;
+    left: 0;
+  }
+
+  .whatsapp-image {
+    position: absolute;
+    width: 478px;
+    height: 476px;
+    top: -13607px;
+    left: -4826px;
+    object-fit: cover;
+  }
+
+  .frame-12 {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    position: absolute;
+    top: 394px;
+    left: 52px;
+  }
+
+  .component-5 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -14001px;
+    margin-left: -4760px;
+  }
+
+  .whatsapp-image-2 {
+    width: 516px;
+    left: -5307px;
+    position: absolute;
+    height: 476px;
+    top: -13607px;
+    object-fit: cover;
+  }
+
+  .component-6 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -14001px;
+    margin-left: -5165px;
+  }
+
+  .card-9 {
+    position: absolute;
+    width: 364px;
+    height: 476px;
+    top: 0;
+    left: 1205px;
+    overflow: hidden;
+  }
+
+  .whatsapp-image-3 {
+    width: 641px;
+    left: -5734px;
+    position: absolute;
+    height: 476px;
+    top: -13607px;
+    object-fit: cover;
+  }
+
+  .component-7 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -14001px;
+    margin-left: -5529px;
+  }
+
+  .card-10 {
+    position: absolute;
+    width: 364px;
+    height: 476px;
+    top: 0;
+    left: 1569px;
+    overflow: hidden;
+  }
+
+  .whatsapp-image-4 {
+    width: 658px;
+    left: -6106px;
+    position: absolute;
+    height: 476px;
+    top: -13607px;
+    object-fit: cover;
+  }
+
+  .component-8 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -14001px;
+    margin-left: -5893px;
+  }
+
+  .card-11 {
+    position: absolute;
+    width: 364px;
+    height: 476px;
+    top: 0;
+    left: 1933px;
+    overflow: hidden;
+  }
+
+  .whatsapp-image-5 {
+    width: 639px;
+    left: -6460px;
+    position: absolute;
+    height: 476px;
+    top: -13607px;
+    object-fit: cover;
+  }
+  
+  .component-9 {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    margin-top: -14001px;
+    margin-left: -6257px;
+  }
+  
+  .nav-bar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 16px;
+    position: relative;
+    flex: 0 0 auto;
+    background-color: var(--white);
+    border-radius: 8px;
+  }
+
+  .text-wrapper-2 {
+    position: relative;
+    width: fit-content;
+    margin-top: -0.5px;
+    font-family: var(--body2-sbold-font-family);
+    font-weight: var(--body2-sbold-font-weight);
+    color: var(--primarysoft-green);
+    font-size: var(--body2-sbold-font-size);
+    letter-spacing: var(--body2-sbold-letter-spacing);
+    line-height: var(--body2-sbold-line-height);
+    white-space: nowrap;
+    font-style: var(--body2-sbold-font-style);
+  }
 }
