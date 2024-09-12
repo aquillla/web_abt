@@ -339,4 +339,11 @@
     gap: 10px;
     overflow-x: overlay;
   }
+
+  /* .image {
+    width: 295.21px;
+    height: 418px;
+    position: relative;
+    object-fit: cover;
+  } */
 }

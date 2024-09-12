@@ -554,18 +554,188 @@
   cursor: pointer;
 }
 
-.mobile-wrapper {
+.mobile-wrapper, .frame-wrapper, .card, .components {
   display: none;
 }
 
 /* Responsive Media Queries */
 @media (max-width: 428px) {
-  .mobile-wrapper {
+  .mobile-wrapper, .frame-wrapper, .card, .components {
     display: block;
   }
   
   .desktop {
     display: none;
+  }
+
+  .frame-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 20px 100px;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--bg);
+    display: flex;
+    position: relative;
+  }
+
+  .frame-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+  }
+
+  .text-wrapper-4 {
+    position: relative;
+    align-self: stretch;
+    margin-top: -1px;
+    font-family: var(--title3-regular-font-family);
+    font-weight: var(--title3-regular-font-weight);
+    color: var(--primarysoft-green);
+    font-size: var(--title3-regular-font-size);
+    text-align: center;
+    letter-spacing: var(--title3-regular-letter-spacing);
+    line-height: var(--title3-regular-line-height);
+    font-style: var(--title3-regular-font-style);
+  }
+
+  .PT-anggun-bestari {
+    position: relative;
+    width: 364px;
+    font-family: var(--body2-reg-font-family);
+    font-weight: var(--body2-reg-font-weight);
+    color: var(--grey);
+    font-size: var(--body2-reg-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-reg-letter-spacing);
+    line-height: var(--body2-reg-line-height);
+    font-style: var(--body2-reg-font-style);
+    text-align: justify;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+    padding: 20px 100px;
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    flex: 0 0 auto;
+    background-color: var(--primarydark-green);
+  }
+
+  .text-wrapper-5 {
+    color: var(--White, #FFF);
+    text-align: center;
+    font-family: "Archivo Black";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 161.8%; /* 32.36px */
+  }
+
+  .vector {
+    position: relative;
+    align-self: stretch;
+    width: 100%;
+    height: 2px;
+    object-fit: cover;
+  }
+
+  .frame-3 {
+    display: flex;
+    width: 428px;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 48px;
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .div-wrapper {
+    align-items: stretch;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    background-color: #ffffff33;
+    border-radius: 12px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    width: 364px;
+  }
+
+  .frame-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: relative;
+    flex: 1;
+    flex-grow: 1;
+  }
+
+  .img-tentangkami {
+    position: relative;
+    flex: 0 0 auto;
+    width: 69.7px;
+    height: 64px;
+    object-fit: cover;
+  }
+
+  .p {
+    position: relative;
+    font-family: var(--body2-reg-font-family);
+    font-weight: var(--body2-reg-font-weight);
+    color: var(--white);
+    font-size: var(--body2-reg-font-size);
+    text-align: center;
+    letter-spacing: var(--body2-reg-letter-spacing);
+    line-height: var(--body2-reg-line-height);
+    font-style: var(--body2-reg-font-style);
+    width: 364px;
+  }
+  .card-2 {
+    align-items: flex-start;
+    justify-content: center;
+    gap: 48px;
+    padding: 24px;
+    flex: 1;
+    align-self: stretch;
+    flex-grow: 1;
+    background-color: #ffffff33;
+    border-radius: 12px;
+    display: flex;
+    position: relative;
+  }
+
+  .image-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 36px;
+    padding: 8px 12px;
+    background-color: var(--white);
+    border-radius: var(--shape-corner-small);
+    position: relative;
+    flex: 0 0 auto;
+  }
+
+  .image {
+    width: 45.7px;
+    height: 48px;
+    position: relative;
+    object-fit: cover;
   }
 
 }

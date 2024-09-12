@@ -7,6 +7,40 @@
     <link rel="stylesheet" href="css/components/gallery-full/style.css" />
   </head>
   <body>
+    <div class="mobile-wrapper">
+      <div class="nav-bar-mobile">
+        <img class="white-logo-mobile" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
+        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger-icon.png" />
+        <img id="cross-icon" class="cross-icon" src="img/cross-nav.png" style="display:none;"/>
+      </div>
+      <div id="menu-mobile" class="nav-bar-mobile-expand-menu">
+        <p class="nav-mobile-beranda" onclick="navigateTo('/')">Beranda</p>
+        <p class="nav-mobile-tentangkami" onclick="navigateTo('tentang-kami')">Tentang Kami</p>
+        <p class="nav-mobile-pakettravel" onclick="navigateTo('paket-travel')">Paket Travel</p>
+        <p class="nav-mobile-galeritesti" onclick="navigateTo('galeri-testimoni')">Galeri & Testimoni</p>
+      </div>
+    </div>
+    <div class="frame-wrapper">
+      <div class="frame-2">
+        <div class="text-wrapper-4">Galeri</div>
+        <p class="PT-anggun-bestari">
+          Kumpulan foto perjalanan ibadah kami selama ini.
+        </p>
+        <div class="foto">
+          <div class="overlap-group-2">
+            <div class="card-6" id="card-6">
+                <div class="frame-11">
+                    <img class="img-mobile" src="img/component-1-36.svg" />
+                    <div class="text-wrapper-12">Umroh 13D Tahun 2022</div>
+                </div>
+            </div>
+            <img class="component-3" src="img/arrow-hijau1.png" onclick="showNextImage()" />
+            <img class="component-4" src="img/arrow-hijau2.png" onclick="showPreviousImage()" />
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
     <div class="desktop">
       <div class="overlap-group-wrapper">
         <div class="overlap-group">
@@ -231,6 +265,59 @@
         // Reload the videos to apply the new source
         mainVideoElement.load();
         thumbnailVideo.load();
+      }
+
+      // Function to swap icons on click and toggle menu visibility
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const crossIcon = document.getElementById('cross-icon');
+      const menuMobile = document.getElementById('menu-mobile');
+
+      hamburgerIcon.addEventListener('click', () => {
+        hamburgerIcon.style.display = 'none';
+        crossIcon.style.display = 'block';
+        menuMobile.style.display = 'flex'; // Show the menu when cross icon is displayed
+      });
+
+      crossIcon.addEventListener('click', () => {
+        crossIcon.style.display = 'none';
+        hamburgerIcon.style.display = 'block';
+        menuMobile.style.display = 'none'; // Hide the menu when cross icon is hidden
+      });
+
+      // Hide menu when clicking outside
+      document.addEventListener('click', (event) => {
+        // Check if the click is outside the mobile menu and the menu is currently visible
+        if (menuMobile.style.display === 'flex' && !menuMobile.contains(event.target) && !hamburgerIcon.contains(event.target)) {
+          // Hide the menu and swap icons
+          menuMobile.style.display = 'none';
+          crossIcon.style.display = 'none';
+          hamburgerIcon.style.display = 'block';
+        }
+      });
+
+      // Array of image sources for the slideshow
+      const backgroundImages = [
+          'url(img/galeri-1.png)',  // Image 1
+          'url(img/galeri-4.png)',  // Image 2
+          'url(img/galeri-5.png)',  // Image 3
+          'url(img/galeri-6.png)',  // Image 4
+          'url(img/galeri-7.png)',  // Image 5
+          'url(img/galeri-8.png)'   // Image 6
+      ];
+
+      // Variable to track the current background image index
+      let currentBackgroundIndex = 0;
+
+      // Function to show the next background image
+      function showNextImage() {
+          currentBackgroundIndex = (currentBackgroundIndex + 1) % backgroundImages.length;
+          document.getElementById('card-6').style.backgroundImage = backgroundImages[currentBackgroundIndex];
+      }
+
+      // Function to show the previous background image
+      function showPreviousImage() {
+          currentBackgroundIndex = (currentBackgroundIndex - 1 + backgroundImages.length) % backgroundImages.length;
+          document.getElementById('card-6').style.backgroundImage = backgroundImages[currentBackgroundIndex];
       }
     </script>
 

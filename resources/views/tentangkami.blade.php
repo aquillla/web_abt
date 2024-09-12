@@ -11,16 +11,50 @@
   <body>
     <div class="mobile-wrapper">
       <div class="nav-bar-mobile">
-        <img class="white-logo-mobile" onclick="navigateTo('')" src="img/white-logo-01-1.png" />
+        <img class="white-logo-mobile" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
         <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger-icon.png" />
         <img id="cross-icon" class="cross-icon" src="img/cross-nav.png" style="display:none;"/>
       </div>
       <div id="menu-mobile" class="nav-bar-mobile-expand-menu">
-        <p class="nav-mobile-beranda" onclick="navigateTo('')">Beranda</p>
+        <p class="nav-mobile-beranda" onclick="navigateTo('/')">Beranda</p>
         <p class="nav-mobile-tentangkami" onclick="navigateTo('tentang-kami')">Tentang Kami</p>
         <p class="nav-mobile-pakettravel" onclick="navigateTo('paket-travel')">Paket Travel</p>
         <p class="nav-mobile-galeritesti" onclick="navigateTo('galeri-testimoni')">Galeri & Testimoni</p>
       </div>
+    </div>
+    <div class="frame-wrapper">
+      <div class="frame-2">
+        <div class="text-wrapper-4">Tentang Kami</div>
+        <p class="PT-anggun-bestari">
+          PT. Anggun Bestari Tour berdiri sejak 2013 telah bepengalaman dalam melayani jemaah Indonesia untuk
+          Ibadah Umroh dan Haji. Secara resmi PT. Anggun Bestari Tour terdaftar dengan SK PPIU No.
+          28092100388350003 berkantor Pusat di JL.&nbsp;&nbsp;Ir. Juanda No. 15. Kota Probolinggo
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="frame-2">
+        <div class="text-wrapper-5">Tujuan Kami</div>
+        <img class="vector" src="img/vector-1.svg" />
+        <div class="frame-3">
+          <div class="div-wrapper">
+            <div class="frame-4">
+              <img class="img-tentangkami" src="img/nav-bar.svg" />
+              <p class="p">
+                Memberikan layanan terbaik dari pra keberangkatan, pendampingan, hingga kepulangan
+              </p>
+            </div>
+            <div class="frame-4">
+              <div class="image-wrapper"><img class="image" src="img/image-9.png" /></div>
+              <p class="p">Memberikan kepastian layanan dalam<br>PASTI Umroh</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="components">
+      @include('components.kantorkami')
+      @include('components.footer')
     </div>
     <div class="desktop">
       <div class="overlap-group-wrapper">
@@ -55,7 +89,7 @@
                 <div class="frame-3">
                   <div class="div-wrapper">
                     <div class="frame-4">
-                      <img class="img" src="img/nav-bar.svg" />
+                      <img class="img-tentangkami" src="img/nav-bar.svg" />
                       <p class="p">
                         Memberikan layanan terbaik dari pra keberangkatan, pendampingan, hingga kepulangan
                       </p>
