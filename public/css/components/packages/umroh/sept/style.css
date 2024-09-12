@@ -59,4 +59,10 @@
     position: relative;
     object-fit: cover;
   }
+
+  .card-102 {
+    padding-top: 0px;
+    padding-bottom: 24px;
+    gap: 24px;
+  }
 }

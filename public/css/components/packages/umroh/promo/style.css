@@ -96,4 +96,14 @@
     flex-direction: column;
   }
 
+  .card-106 {
+    padding-top: 0px;
+    gap: 0px;
+    padding-bottom: 24px;
+  }
+
+  .card-100 {
+    padding-bottom: 0px;
+  }
+
 }

@@ -3,85 +3,87 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anggun Bestari Tour - Paket Travel</title>
     <link rel="stylesheet" href="globals.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
-    <link rel="stylesheet" href="css/pages/pakettravel/style.css" />
+    <link rel="stylesheet" href="css/components/packages/selector1/style.css" />
+    <style>
+      /* Simple CSS to hide the frame by default */
+      .hidden {
+        display: none;
+      }
+      .frame-14 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 16px 0px;
+        position: relative;
+        flex: 0 0 auto;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: var(--primarysoft-green);
+      }
+      .frame-15 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 16px 0px;
+        position: relative;
+        flex: 0 0 auto;
+        cursor: pointer; /* Add cursor for inactive months */
+      }
+      .active-month {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: var(--primarysoft-green);
+        font-weight: var(--body2-sbold-font-weight);
+        color: var(--primarysoft-green);
+        cursor:not-allowed;
+      }
+    </style>
   </head>
   <body>
-    <div class="mobile-wrapper">
-      <div class="nav-bar-mobile">
-        <img class="white-logo-mobile" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
-        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger-icon.png" />
-        <img id="cross-icon" class="cross-icon" src="img/cross-nav.png" style="display:none;"/>
-      </div>
-      <div id="menu-mobile" class="nav-bar-mobile-expand-menu">
-        <p class="nav-mobile-beranda" onclick="navigateTo('/')">Beranda</p>
-        <p class="nav-mobile-tentangkami" onclick="navigateTo('tentang-kami')">Tentang Kami</p>
-        <p class="nav-mobile-pakettravel" onclick="navigateTo('paket-travel')">Paket Travel</p>
-        <p class="nav-mobile-galeritesti" onclick="navigateTo('galeri-testimoni')">Galeri & Testimoni</p>
-      </div>
-    </div>
-    <div class="desktop">
-      <div class="frame">
-        <div class="card">
-          <div class="main-div">
-            <img class="white-logo-travel" src="img/white-logo-01-1.png" />
-            <div class="nav-bar-travel">
-              <div class="text-wrapper-200" onclick="navigateTo('/')">Beranda</div>
-              <div class="text-wrapper-200" onclick="navigateTo('tentang-kami')">Tentang Kami</div>
-              <div class="text-wrapper-201">Paket Travel</div>
-              <div class="text-wrapper-200" onclick="navigateTo('galeri-testimoni')">Galeri & Testimoni</div>
+    <div class="card-100">
+      <div class="frame-10">
+        <div class="frame-110">
+          <div class="text-wrapper-8">Pilih Paket Perjalanan</div>
+          <p class="text-wrapper-9">
+            Dapatkan layanan maksimal, pilih layanan paket dari kami sekarang.
+          </p>
+        </div>
+        <div class="frame-120">
+          <!-- Umroh button with initial active class -->
+          <div class="nav-bar-3 nav-bar-active">
+            <div class="text-wrapper-10 packages-active" onclick="selectPackage('umroh')">
+              Umroh
+            </div>
+          </div>
+          <!-- Haji button with initial inactive class -->
+          <div class="nav-bar-4 nav-bar-inactive">
+            <div class="text-wrapper-11 packages-inactive" onclick="selectPackage('haji')">
+              Haji
             </div>
           </div>
         </div>
-        <div class="packages-selector-wrapper">
-          @include('components.packages-selector')
-        </div>
-        <div class="components-wrapper">
-          @include('components.kantorkami')
-          @include('components.footer')
+
+        <!-- Month selection frame, shown for Umroh and hidden for Haji -->
+        <div id="frame-13" class="frame-13">
+          <div class="frame-15 text-wrapper-13" id="btn-september" onclick="selectMonth(this, 'umroh-sept')">September</div>
+          <div class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-okt')">Oktober</div>
+          <div class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-nov')">November</div>
+          <div class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-des')">Desember</div>
+          <div id="frame-umroh" class="frame-15 text-wrapper-13" onclick="selectMonth(this, 'umroh-promo')">Promo!</div>
         </div>
       </div>
     </div>
 
+    <!-- This is where the month components will be loaded dynamically -->
+    <div id="packages-container1"></div>
 
     <script>
-      // Function to navigate to a different page
-      function navigateTo(url) {
-        window.location.href = url;
-      }
-
-      // Function to swap icons on click and toggle menu visibility
-      const hamburgerIcon = document.getElementById('hamburger-icon');
-      const crossIcon = document.getElementById('cross-icon');
-      const menuMobile = document.getElementById('menu-mobile');
-
-      hamburgerIcon.addEventListener('click', () => {
-        hamburgerIcon.style.display = 'none';
-        crossIcon.style.display = 'block';
-        menuMobile.style.display = 'flex'; // Show the menu when cross icon is displayed
-      });
-
-      crossIcon.addEventListener('click', () => {
-        crossIcon.style.display = 'none';
-        hamburgerIcon.style.display = 'block';
-        menuMobile.style.display = 'none'; // Hide the menu when cross icon is hidden
-      });
-
-      // Hide menu when clicking outside
-      document.addEventListener('click', (event) => {
-        // Check if the click is outside the mobile menu and the menu is currently visible
-        if (menuMobile.style.display === 'flex' && !menuMobile.contains(event.target) && !hamburgerIcon.contains(event.target)) {
-          // Hide the menu and swap icons
-          menuMobile.style.display = 'none';
-          crossIcon.style.display = 'none';
-          hamburgerIcon.style.display = 'block';
-        }
-      });
-
-        // Function to handle switching between Umroh and Haji
-        function selectPackage(packageType) {
+      // Function to handle switching between Umroh and Haji
+      function selectPackage(packageType) {
         const monthFrame = document.getElementById('frame-13');
         const umrohButton = document.querySelector('.nav-bar-3');
         const hajiButton = document.querySelector('.nav-bar-4');
@@ -172,7 +174,5 @@
         selectMonth(septemberButton, 'umroh-sept'); // Ensure September is loaded and selected
       };
     </script>
-
-    
   </body>
 </html>

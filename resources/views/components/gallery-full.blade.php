@@ -40,7 +40,50 @@
         </div>
       </div>
     </div>
+    <!-- Video Testimoni Section -->
+    <div class="card">
+      <div class="frame-2">
+        <div class="text-wrapper-5">Testimoni</div>
+        <p class="desc-testi">
+          Dengarkan cerita dari jamaah kami.
+        </p>
+        <img class="vector" src="img/Vector 1.png" />
+      </div>
+
+      <!-- Video Testimoni Grid -->
+      <div class="video-testimoni-grid">
+        <!-- Main Video -->
+        <div class="main-video">
+          <video id="mainVideo" controls>
+            <source src="vid/video-1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <!-- Small Video Thumbnails -->
+        <div class="video-thumbnails">
+          <div class="thumbnail">
+            <video controls onclick="swapVideo(this)">
+              <source src="vid/video-2.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="thumbnail">
+            <video controls onclick="swapVideo(this)">
+              <source src="vid/video-3.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="thumbnail">
+            <video controls onclick="swapVideo(this)">
+              <source src="vid/video-3.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="components-gallery-full"> 
+      @include('components.kantorkami')
+      @include('components.footer')
+    </div>
+    <!-- End of Video Testimoni Section -->
     <div class="desktop">
       <div class="overlap-group-wrapper">
         <div class="overlap-group">
@@ -128,7 +171,7 @@
                 <p class="desc-testi">
                   Dengarkan cerita dari jamaah kami.
                 </p>
-                <img class="vector" src="img/vector-1.svg" />
+                <img class="vector" src="img/Vector 1.png" />
               </div>
 
               <!-- Video Testimoni Grid -->
@@ -252,17 +295,19 @@
         document.getElementById('loadMoreButton').parentElement.classList.remove('hidden'); // Show "Muat Lebih Banyak" button
       });
 
-      // Function to swap the main video with the clicked thumbnail
       function swapVideo(thumbnailVideo) {
         const mainVideoElement = document.getElementById('mainVideo');
-        const mainVideoSrc = mainVideoElement.querySelector('source').src;
-        const thumbnailVideoSrc = thumbnailVideo.querySelector('source').src;
+        const mainVideoSource = mainVideoElement.querySelector('source');
+        const thumbnailVideoSource = thumbnailVideo.querySelector('source');
 
-        // Swap the main video source with the clicked thumbnail's source
-        mainVideoElement.querySelector('source').src = thumbnailVideoSrc;
-        thumbnailVideo.querySelector('source').src = mainVideoSrc;
+        // Save the current source of the main video
+        const mainVideoSrc = mainVideoSource.src;
 
-        // Reload the videos to apply the new source
+        // Swap the main video source with the thumbnail video source
+        mainVideoSource.src = thumbnailVideoSource.src;
+        thumbnailVideoSource.src = mainVideoSrc;
+
+        // Reload both videos to apply the new sources
         mainVideoElement.load();
         thumbnailVideo.load();
       }

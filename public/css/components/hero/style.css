@@ -222,8 +222,22 @@
 
 /* Responsive Media Queries */
 @media (max-width: 428px) {
+  .nav-bar-mobile {
+    position: fixed;
+    top: 0; /* Distance from the top */
+    left: 0; /* Distance from the left */
+    width: 100%; /* Full width */
+    z-index: 10;
+    will-change: transform;
+  }
+
+  .nav-bar-mobile-expand-menu {
+    margin-top: 80px;
+  }
+
   .hero {
     height: 850px;
+    margin-top: 80px;
   }
 
   .hero .white-logo {
