@@ -1,0 +1,17 @@
+/* Style the hero div */
+.hero {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 630px;
+  background-color: #00000080;
+  background-image: url(/img/hero.png);
+  background-size: cover;
+  z-index: 1;
+  }
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+
+  }
+  

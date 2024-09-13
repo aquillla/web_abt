@@ -14,6 +14,7 @@
 }
 
 .hero .overlap {
+  width: 100%;
   position: relative;
 }
 
@@ -150,7 +151,6 @@
   background-color: #00000080;
   background-image: url(/img/hero.png);
   background-size: cover;
-  background-position: 50% 50%;
   z-index: 1;
 }
 
@@ -236,7 +236,6 @@
   }
 
   .hero {
-    height: 850px;
     margin-top: 80px;
   }
 
@@ -255,7 +254,7 @@
   .hero .motto {
     position: relative;
     width: 400px;
-    top: 300px;
+    top: 240px;
     left: 24px;
     flex: 1;
     align-self: stretch;
@@ -292,7 +291,7 @@
     flex: 0 0 auto;
     background-color: var(--white);
     border-radius: 8px;
-    top: -100px;
+    top: -180px;
   }
 
   .white-logo {
@@ -304,6 +303,6 @@
   }
 
   .hero .nav-bar-2 {
-    top: -100px;
+    top: -180px;
   }
 }

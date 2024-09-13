@@ -105,9 +105,7 @@
     height: 800px;
     position: relative;
     object-fit: cover;
-    margin-top: 48px;
-    border-radius: 20px;
-  }
+    margin-top: 48px;  }
   
    .nav-bar-5 {
     display: inline-flex;
