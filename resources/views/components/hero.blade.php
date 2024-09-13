@@ -11,8 +11,8 @@
     <div class="mobile-wrapper">
       <div class="nav-bar-mobile">
         <img class="white-logo-mobile" onclick="navigateTo('')" src="img/white-logo-01-1.png" />
-        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger-icon.png" />
-        <img id="cross-icon" class="cross-icon" src="img/cross-nav.png" style="display:none;"/>
+        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger.svg" />
+        <img id="cross-icon" class="cross-icon" src="img/cross-icon.svg" style="display:none;"/>
       </div>
       <div id="menu-mobile" class="nav-bar-mobile-expand-menu">
         <p class="nav-mobile-beranda" onclick="navigateTo('')">Beranda</p>
@@ -38,7 +38,7 @@
           <div class="text-wrapper-2">Hubungi Admin</div>
         </div>
       </div>
-      <img class="white-logo" onclick="navigateTo('')" src="img/white-logo-01-1.png" />
+      <img class="white-logo" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
     </div>
 
     <script>
@@ -49,7 +49,7 @@
 
       // Function to handle the "Hubungi Admin" button
       function contactAdmin() {
-        window.location.href = 'https://wa.me/085259742624'; // WhatsApp link
+        window.location.href = 'https://wa.me/6285259742624'; // WhatsApp link
       }
 
       // Function to swap icons on click and toggle menu visibility

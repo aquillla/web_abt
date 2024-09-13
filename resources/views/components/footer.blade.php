@@ -34,11 +34,11 @@
       }
 
       function contactAdmin1() {
-        window.location.href = 'https://wa.me/085259742624'; 
+        window.location.href = 'https://wa.me/6285259742624'; 
       }
 
       function contactAdmin2() {
-        window.location.href = 'https://wa.me/085259742625'; 
+        window.location.href = 'https://wa.me/6285259742625'; 
       }
 
       function contactEmail() {

@@ -1,7 +1,7 @@
  .frame {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 100%;
   align-items: flex-start;
   position: absolute;
   top: 0;
@@ -34,6 +34,7 @@
   height: 67px;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 
  .nav-bar-travel {
@@ -131,6 +132,10 @@
 .packages-selector-wrapper {
   width: 100%;
   overflow-x: hidden;
+}
+
+.components-wrapper {
+  width: 100%;
 }
 
 

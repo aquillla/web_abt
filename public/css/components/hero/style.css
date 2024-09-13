@@ -10,7 +10,7 @@
 
 .hero .overlap-wrapper {
   background-color: var(--white);
-  width: 1440px;
+  width: 100%;
 }
 
 .hero .overlap {
@@ -20,7 +20,7 @@
 .hero .frame {
   display: flex;
   flex-direction: column;
-  width: 1440px;
+  width: 100%;
   align-items: flex-start;
   position: absolute;
   top: 0;
@@ -255,7 +255,7 @@
   .hero .motto {
     position: relative;
     width: 400px;
-    top: 400px;
+    top: 300px;
     left: 24px;
     flex: 1;
     align-self: stretch;
@@ -292,6 +292,7 @@
     flex: 0 0 auto;
     background-color: var(--white);
     border-radius: 8px;
+    top: -100px;
   }
 
   .white-logo {
@@ -300,5 +301,9 @@
 
   .hamburger-icon {
     width: 30px; /* Adjust menu icon size for mobile */
+  }
+
+  .hero .nav-bar-2 {
+    top: -100px;
   }
 }

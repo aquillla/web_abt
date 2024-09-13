@@ -34,7 +34,7 @@
 
       // Function to handle the "Hubungi Admin" button
       function contactAdmin() {
-        window.location.href = 'https://wa.me/085259742624'; // WhatsApp link
+        window.location.href = 'https://wa.me/6285259742624'; // WhatsApp link
       }
     </script>
   </body>

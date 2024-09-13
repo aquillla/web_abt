@@ -12,8 +12,8 @@
     <div class="mobile-wrapper">
       <div class="nav-bar-mobile">
         <img class="white-logo-mobile" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
-        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger-icon.png" />
-        <img id="cross-icon" class="cross-icon" src="img/cross-nav.png" style="display:none;"/>
+        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger.svg" />
+        <img id="cross-icon" class="cross-icon" src="img/cross-icon.svg" style="display:none;"/>
       </div>
       <div id="menu-mobile" class="nav-bar-mobile-expand-menu">
         <p class="nav-mobile-beranda" onclick="navigateTo('/')">Beranda</p>
@@ -26,7 +26,7 @@
       <div class="frame">
         <div class="card">
           <div class="main-div">
-            <img class="white-logo-travel" src="img/white-logo-01-1.png" />
+            <img class="white-logo-travel" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
             <div class="nav-bar-travel">
               <div class="text-wrapper-200" onclick="navigateTo('/')">Beranda</div>
               <div class="text-wrapper-200" onclick="navigateTo('tentang-kami')">Tentang Kami</div>
@@ -44,19 +44,23 @@
         </div>
       </div>
     </div>
-        <!-- Modal (lightbox) -->
-        <div id="imageModal" class="modal">
-          <span class="close-btn" onclick="closeModal()">&times;</span>
-          <div class="modal-content">
-            <img id="modalImg" src="" alt="Full Size Image">
-          </div>
-        </div>
-
+    <!-- Modal (lightbox) -->
+    <div id="imageModal" class="modal">
+      <span class="close-btn" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+        <img id="modalImg" src="" alt="Full Size Image">
+      </div>
+    </div>
 
     <script>
       // Function to navigate to a different page
       function navigateTo(url) {
         window.location.href = url;
+      }
+
+      // Function to handle the "Hubungi Admin" button
+      function contactAdmin() {
+        window.location.href = 'https://wa.me/6285259742624'; // WhatsApp link
       }
 
       // Function to swap icons on click and toggle menu visibility
@@ -179,8 +183,8 @@
         selectMonth(septemberButton, 'umroh-sept'); // Ensure September is loaded and selected
       };
 
-            // Function to open the modal and display the full-size image
-            function openModal(src) {
+      // Function to open the modal and display the full-size image
+      function openModal(src) {
         var modal = document.getElementById('imageModal');
         var modalImg = document.getElementById('modalImg');
         modal.style.display = 'flex'; // Show the modal

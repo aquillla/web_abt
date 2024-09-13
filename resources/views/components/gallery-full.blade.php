@@ -10,8 +10,8 @@
     <div class="mobile-wrapper">
       <div class="nav-bar-mobile">
         <img class="white-logo-mobile" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
-        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger-icon.png" />
-        <img id="cross-icon" class="cross-icon" src="img/cross-nav.png" style="display:none;"/>
+        <img id="hamburger-icon" class="hamburger-icon" src="img/hamburger.svg" />
+        <img id="cross-icon" class="cross-icon" src="img/cross-icon.svg" style="display:none;"/>
       </div>
       <div id="menu-mobile" class="nav-bar-mobile-expand-menu">
         <p class="nav-mobile-beranda" onclick="navigateTo('/')">Beranda</p>
@@ -55,7 +55,7 @@
         <!-- Main Video -->
         <div class="main-video">
           <video id="mainVideo" controls>
-            <source src="vid/video-1.mp4" type="video/mp4" />
+            <source src="vid/video-utama.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
@@ -63,12 +63,12 @@
         <div class="video-thumbnails">
           <div class="thumbnail">
             <video controls onclick="swapVideo(this)">
-              <source src="vid/video-2.mp4" type="video/mp4" />
+              <source src="vid/video-1.mp4" type="video/mp4" />
             </video>
           </div>
           <div class="thumbnail">
             <video controls onclick="swapVideo(this)">
-              <source src="vid/video-3.mp4" type="video/mp4" />
+              <source src="vid/video-2.mp4" type="video/mp4" />
             </video>
           </div>
           <div class="thumbnail">
@@ -91,7 +91,7 @@
           <div class="frame">
             <div class="card">
               <div class="div">
-                <img class="white-logo" src="img/white-logo-01-1.png" />
+                <img class="white-logo" onclick="navigateTo('/')" src="img/white-logo-01-1.png" />
                 <div class="nav-bar">
                   <div class="text-wrapper-205" onclick="navigateTo('/')">Beranda</div>
                   <div class="text-wrapper-205" onclick="navigateTo('tentang-kami')">Tentang Kami</div>
@@ -179,24 +179,24 @@
                 <!-- Main Video -->
                 <div class="main-video">
                   <video id="mainVideo" controls>
-                    <source src="vid/video-1.mp4" type="video/mp4" />
+                    <source src="vid/video-utama.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
                 <!-- Small Video Thumbnails -->
                 <div class="video-thumbnails">
-                  <div class="thumbnail">
-                    <video controls onclick="swapVideo(this)">
+                  <div class="thumbnail" onclick="swapVideo(this)">
+                    <video controls>
+                      <source src="vid/video-1.mp4" type="video/mp4" />
+                    </video>
+                  </div>
+                  <div class="thumbnail" onclick="swapVideo(this)">
+                    <video controls>
                       <source src="vid/video-2.mp4" type="video/mp4" />
                     </video>
                   </div>
-                  <div class="thumbnail">
-                    <video controls onclick="swapVideo(this)">
-                      <source src="vid/video-3.mp4" type="video/mp4" />
-                    </video>
-                  </div>
-                  <div class="thumbnail">
-                    <video controls onclick="swapVideo(this)">
+                  <div class="thumbnail" onclick="swapVideo(this)">
+                    <video controls>
                       <source src="vid/video-3.mp4" type="video/mp4" />
                     </video>
                   </div>
@@ -266,11 +266,11 @@
       }
 
       function contactAdmin1() {
-        window.location.href = 'https://wa.me/085259742624'; 
+        window.location.href = 'https://wa.me/6285259742624'; 
       }
 
       function contactAdmin2() {
-        window.location.href = 'https://wa.me/085259742625'; 
+        window.location.href = 'https://wa.me/6285259742625'; 
       }
 
       function contactEmail() {
@@ -295,22 +295,47 @@
         document.getElementById('loadMoreButton').parentElement.classList.remove('hidden'); // Show "Muat Lebih Banyak" button
       });
 
-      function swapVideo(thumbnailVideo) {
+      function swapVideo(thumbnailDiv) {
         const mainVideoElement = document.getElementById('mainVideo');
         const mainVideoSource = mainVideoElement.querySelector('source');
+
+        // Find the video inside the clicked thumbnail div
+        const thumbnailVideo = thumbnailDiv.querySelector('video');
         const thumbnailVideoSource = thumbnailVideo.querySelector('source');
 
-        // Save the current source of the main video
-        const mainVideoSrc = mainVideoSource.src;
+        // Get the current source of the main video and the thumbnail video
+        const mainVideoSrc = mainVideoSource.getAttribute('src');
+        const thumbnailVideoSrc = thumbnailVideoSource.getAttribute('src');
 
-        // Swap the main video source with the thumbnail video source
-        mainVideoSource.src = thumbnailVideoSource.src;
-        thumbnailVideoSource.src = mainVideoSrc;
+        // Swap the video sources
+        mainVideoSource.setAttribute('src', thumbnailVideoSrc);
+        thumbnailVideoSource.setAttribute('src', mainVideoSrc);
 
-        // Reload both videos to apply the new sources
+        // Reload the main video with the new source
         mainVideoElement.load();
-        thumbnailVideo.load();
+
+        // Optionally, pause the thumbnail video
+        thumbnailVideo.pause();
       }
+
+      // Get all video elements on the page
+      const videos = document.querySelectorAll('video');
+
+      // Function to pause all videos except the one currently playing
+      function pauseOtherVideos(currentVideo) {
+        videos.forEach((video) => {
+          if (video !== currentVideo) {
+            video.pause();
+          }
+        });
+      }
+
+      // Add event listener to each video
+      videos.forEach((video) => {
+        video.addEventListener('play', function() {
+          pauseOtherVideos(video); // Pause all other videos when one starts playing
+        });
+      });
 
       // Function to swap icons on click and toggle menu visibility
       const hamburgerIcon = document.getElementById('hamburger-icon');
