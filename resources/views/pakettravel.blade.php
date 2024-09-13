@@ -44,6 +44,13 @@
         </div>
       </div>
     </div>
+        <!-- Modal (lightbox) -->
+        <div id="imageModal" class="modal">
+          <span class="close-btn" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <img id="modalImg" src="" alt="Full Size Image">
+          </div>
+        </div>
 
 
     <script>
@@ -171,6 +178,20 @@
         const septemberButton = document.getElementById('btn-september');
         selectMonth(septemberButton, 'umroh-sept'); // Ensure September is loaded and selected
       };
+
+            // Function to open the modal and display the full-size image
+            function openModal(src) {
+        var modal = document.getElementById('imageModal');
+        var modalImg = document.getElementById('modalImg');
+        modal.style.display = 'flex'; // Show the modal
+        modalImg.src = src; // Set the image source to the clicked image
+      }
+
+      // Function to close the modal
+      function closeModal() {
+        var modal = document.getElementById('imageModal');
+        modal.style.display = 'none'; // Hide the modal
+      }
     </script>
 
     

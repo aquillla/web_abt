@@ -82,10 +82,6 @@
   width: 100%;
 }
 
-#packages-container1 {
-  width: 100%;
-}
-
 /* General Hover Effect */
  .text-wrapper-200:hover {
   font-weight: 600;
@@ -134,6 +130,7 @@
 
 .packages-selector-wrapper {
   width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -154,7 +151,7 @@
     flex: 0 0 auto;
     background-color: var(--primarydark-green);
   }
-  .mobile-wrapper, .packages-selector-wrapper, .components-wrapper {
+  .mobile-wrapper, .components-wrapper {
     display: block;
     width: 428px !important;
   }
@@ -195,20 +192,60 @@
     gap: 16px;
     position: relative;
     align-self: stretch;
-    width: 428px !important;
+    width: 100%;
     flex: 0 0 auto;
   }
 
   .text-wrapper-8 {
-    position: relative;
-    align-self: stretch;
-    margin-top: -1px;
-    font-family: "Archivo Black", Helvetica;
-    font-weight: 400;
-    color: var(--primarysoft-green);
-    font-size: 20px;
-    letter-spacing: 0;
-    line-height: 32.4px;
+    position: relative !important;
+    align-self: stretch !important;
+    margin-top: -1px !important;
+    font-family: "Archivo Black", Helvetica !important;
+    font-weight: 400 !important;
+    color: var(--primarysoft-green) !important;
+    font-size: 20px !important;
+    letter-spacing: 0 !important;
+    line-height: 32.4px !important;
     text-align: center !important;
+  }
+
+  .text-wrapper-9 {
+    text-align: center !important;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 9999; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  .modal-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
   }
 }

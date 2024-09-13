@@ -77,25 +77,6 @@
 }
 
 @media (max-width: 428px) {
-  .image {
-    width: 295.21px;
-    height: 418px;
-    position: relative;
-    object-fit: cover;
-  }
-
-  .image-item {
-    width: 295.21px;
-    height: 418px;
-    position: relative;
-    object-fit: cover;
-  }
-  
-  .image-row {
-    display: flex;
-    flex-direction: column;
-  }
-
   .card-106 {
     padding-top: 0px;
     gap: 0px;
